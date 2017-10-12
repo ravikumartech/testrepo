@@ -1,0 +1,33 @@
+git clone -b activiti6 https://github.com/Activiti/Activiti.git
+
+mvn -DskipTests -Pdistro clean install
+
+sh start.sh
+
+
+$ git clone -b swaggerimplementation https://github.com/ravitadela/Activiti.git
+
+$ git checkout swaggerimplementation
+
+$ git status
+
+$ git checkout activiti6
+
+$ gitk&\
+
+mvn -Pdistro clean install -DskipTests   // to build project
+
+mvn -Pswagger clean install -DskipTests   // to build swagger profile
+
+
+
+$ git add .    // to add modified changes to github
+
+$ git commit -m "Swagger implementation in historic process, task and variable resources" 
+              // to commit changes to github
+
+$ git push origin swaggerimplementation
+              // to publish the changes to github
+
+
+$ git pull https://github.com/Activiti/Activiti.git activiti6  // to pull changes
